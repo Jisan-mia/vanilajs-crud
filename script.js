@@ -29,7 +29,7 @@ function validateForm() {
 		isbn.value !== "" &&
 		publishedYear.value !== ""
 	) {
-		alertMsg("Successfully added", "success");
+		alertMsg("Successfully Bood Added", "success");
 
 		return true;
 	} else {
@@ -62,7 +62,7 @@ function insertNewBook(book) {
 function deleteBook(row) {
 	const parent = row.parentNode.parentNode;
 	parent.innerHTML = "";
-	alertMsg("Delete Successfully", "warning");
+	alertMsg("Deleted Successfully", "warning");
 }
 
 //edit book
@@ -73,6 +73,8 @@ function editBook(row) {
 	author.value = selectedRow.cells[2].innerHTML;
 	isbn.value = selectedRow.cells[3].innerHTML;
 	publishedYear.value = selectedRow.cells[4].innerHTML;
+
+	document.querySelector(".submit-btn").value = "Update";
 }
 
 //update book
@@ -109,6 +111,10 @@ form.addEventListener("submit", function (e) {
 		if (selectedRow == null) {
 			insertNewBook(bookInfo);
 		} else {
+			document.querySelector(".submit-btn").value = "Submit";
+
+			alertMsg("Successfully Book Updated", "primary");
+
 			updateBook(bookInfo);
 		}
 	}
