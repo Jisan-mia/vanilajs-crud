@@ -29,11 +29,11 @@ function validateForm() {
 		isbn.value !== "" &&
 		publishedYear.value !== ""
 	) {
-		alertMsg("Successfully Bood Added", "success");
+		alertMsg("Book Added Successfully", "success");
 
 		return true;
 	} else {
-		alertMsg("Fill up all the field", "danger");
+		alertMsg("Fill up all the field please!", "danger");
 
 		return false;
 	}
@@ -113,7 +113,7 @@ form.addEventListener("submit", function (e) {
 		} else {
 			document.querySelector(".submit-btn").value = "Submit";
 
-			alertMsg("Successfully Book Updated", "primary");
+			alertMsg("Book Updated Successfully", "primary");
 
 			updateBook(bookInfo);
 		}
