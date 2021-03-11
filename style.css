@@ -1,0 +1,26 @@
+i.fa-book {
+	color: rgba(66, 15, 250, 0.836);
+	margin-left: 5px;
+}
+
+i.fa-times {
+	background-color: red;
+	padding: 5px;
+	color: rgb(236, 222, 222);
+	cursor: pointer;
+}
+
+i.fa-edit {
+	background-color: rgb(59, 187, 59);
+	color: rgb(247, 229, 229);
+	cursor: pointer;
+	padding: 5px;
+}
+
+.form-group {
+	margin-bottom: 5px;
+}
+
+.alert {
+	transition: all 0.3s ease-in-out;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+			crossorigin="anonymous"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+			integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="style.css" />
+		<title>JS crud</title>
+	</head>
+	<body>
+		<div class="container">
+			<h1 class="dispary-4 text-center mt-3">
+				My <span class="text-primary">Book </span>List<i
+					class="fas fa-book"
+				></i>
+			</h1>
+			<div id="msgArea"></div>
+			<form id="book-form">
+				<div class="form-group">
+					<label for="title" class="form-label">Title</label
+					><input type="text" class="form-control" id="title" />
+				</div>
+				<div class="form-group">
+					<label for="author" class="form-label">Author</label
+					><input type="text" class="form-control" id="author" />
+				</div>
+				<div class="form-group">
+					<label for="isbn" class="form-label">ISBN</label
+					><input type="text" class="form-control" id="isbn" />
+				</div>
+				<div class="form-group">
+					<label for="publishedYear" class="form-label">Published Year</label>
+					<input type="text" class="form-control" id="publishedYear" />
+				</div>
+
+				<input
+					type="submit"
+					value="Submit"
+					class="btn btn-primary btn-block w-100 mt-3"
+				/>
+			</form>
+
+			<table class="table table-striped mt-4">
+				<thead>
+					<tr>
+						<th>#</th>
+						<th>Title</th>
+						<th>Author</th>
+						<th>ISBN</th>
+						<th>Year</th>
+						<th>Edit/Delete</th>
+					</tr>
+				</thead>
+
+				<tbody id="tBody"></tbody>
+			</table>
+		</div>
+
+		<script src="script.js"></script>
+	</body>
+</html>
